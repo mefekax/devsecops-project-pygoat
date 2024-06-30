@@ -18,4 +18,4 @@ jobs:
       run: pip install bandit
 
     - name: Rund Bandit Scan
-      run: bandit -r -ll -lll - ii -iii .
+      run: bandit -r -l medium, high -i medium,high .
